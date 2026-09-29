@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Make a simple personal plan for exploring Mangystau.">
+  <title>Plan a Visit | Discover Mangystau</title>
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-dark navbar-expand-lg site-nav" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">MANGYSTAU<span class="brand-note">A LOCAL GUIDE</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="primaryNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="region.html">Region</a></li>
+            <li class="nav-item"><a class="nav-link" href="places.html">Places</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="plan.html">Plan a Visit</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro container" aria-labelledby="page-heading">
+      <p class="eyebrow mb-2">Make it personal</p>
+      <h1 class="page-title mb-3" id="page-heading">Plan a visit</h1>
+      <p class="lead-copy">Choose a place and create a short plan to explore it. This form works on this page only; it does not send or save your information.</p>
+    </section>
+
+    <section class="section-space pt-3" aria-label="Visit planning form">
+      <div class="container plan-layout">
+        <div class="info-panel plan-form">
+          <form id="visit-form">
+            <div class="mb-3">
+              <label class="form-label" for="visitor-name">Your name</label>
+              <input class="form-control" id="visitor-name" name="visitor-name" type="text" autocomplete="name" required maxlength="60">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="destination">Place to explore</label>
+              <select class="form-select" id="destination" name="destination" required>
+                <option value="" selected disabled>Choose a place</option>
+                <option value="Aktau">Aktau</option>
+                <option value="Bozzhyra">Bozzhyra</option>
+                <option value="Sherkala">Sherkala</option>
+                <option value="Airakty">Airakty</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="interest">What interests you most?</label>
+              <select class="form-select" id="interest" name="interest" required>
+                <option value="" selected disabled>Choose an interest</option>
+                <option value="Photography">Photography</option>
+                <option value="Coastal views">Coastal views</option>
+                <option value="Rock formations">Rock formations</option>
+              </select>
+            </div>
+            <div class="mb-4">
+              <label class="form-label" for="visit-note">Your note (optional)</label>
+              <textarea class="form-control" id="visit-note" name="visit-note" rows="4" maxlength="300" placeholder="What would you like to see?"></textarea>
+            </div>
+            <button class="btn button-primary" type="submit">Create my plan</button>
+          </form>
+          <section class="plan-result mt-4" id="plan-result" aria-live="polite" hidden>
+            <h2 class="h4 mb-2">Your plan</h2>
+            <p class="mb-0" id="plan-summary"></p>
+          </section>
+        </div>
+
+        <aside class="info-panel p-4" aria-labelledby="tip-heading">
+          <img class="side-photo mb-4" src="images/gallery-6.jpg" alt="Airakty Mountain at sunset" loading="lazy">
+          <p class="eyebrow mb-2">A starting point</p>
+          <h2 class="h3 mb-3" id="tip-heading">Browse before you choose</h2>
+          <p class="text-secondary mb-3">Compare the four featured places, then use the form to make a simple personal note.</p>
+          <a class="btn button-primary" href="places.html">View places</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <span>Discover Mangystau · Berdibek Meiirbek</span>
+      <a href="places.html">Explore places</a>
+    </div>
+  </footer>
+  <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="plan.js"></script>
+</body>
+</html>
