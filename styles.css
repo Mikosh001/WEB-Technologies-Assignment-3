@@ -137,6 +137,7 @@ a:hover { color: var(--sea); }
 .place-card:hover { transform: translateY(-5px); box-shadow: 0 16px 30px rgb(21 51 64 / 13%); }
 .place-card img { width: 100%; height: 230px; object-fit: cover; }
 .place-card-body { display: flex; flex: 1; flex-direction: column; padding: 24px; }
+.place-card h2,
 .place-card h3 { font-family: Georgia, "Times New Roman", serif; font-size: 1.45rem; }
 .place-card p { color: var(--muted); }
 .place-card .text-link { align-self: flex-start; margin-top: auto; font-weight: 700; text-decoration-thickness: 2px; text-underline-offset: 4px; }
@@ -164,13 +165,13 @@ a:hover { color: var(--sea); }
 }
 .photo-tile {
   position: relative;
-  min-height: 230px;
+  height: 230px;
   margin: 0;
   overflow: hidden;
   border-radius: 12px;
   background: var(--line);
 }
-.photo-tile img { width: 100%; height: 100%; min-height: 230px; object-fit: cover; transition: transform .2s ease; }
+.photo-tile img { width: 100%; height: 100%; object-fit: cover; transition: transform .2s ease; }
 .photo-tile figcaption {
   position: absolute;
   right: 0;
@@ -211,8 +212,7 @@ a:hover { color: var(--sea); }
   .section-space { padding-block: 60px; }
   .page-intro { padding-block: 54px 34px; }
   .photo-grid { grid-template-columns: 1fr; }
-  .photo-tile,
-  .photo-tile img { min-height: 260px; }
+  .photo-tile { height: 260px; }
   .wide-photo { height: 300px; }
   .plan-form { padding: 22px; }
 }
