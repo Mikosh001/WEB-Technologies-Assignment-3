@@ -193,7 +193,7 @@ a:hover { color: var(--sea); }
 .plan-form .form-label { font-weight: 700; }
 .plan-form .form-control:focus,
 .plan-form .form-select:focus { border-color: var(--sea); box-shadow: 0 0 0 .2rem rgb(20 107 116 / 20%); }
-#plan-result { border-left: 4px solid var(--sea); padding: 16px 20px; background: #edf4f2; }
+#plan-result { border-left: 4px solid var(--sea); padding: 16px 20px; background: #edf4f2; overflow-wrap: anywhere; }
 .side-photo { width: 100%; height: 260px; object-fit: cover; border-radius: 12px; }
 
 .site-footer { background: var(--night); color: #e4eeeb; }
