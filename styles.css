@@ -148,13 +148,16 @@ a:hover { color: var(--sea); }
 .note-line { border-left: 4px solid var(--sea); padding-left: 18px; color: var(--muted); }
 
 .places-table {
-  --bs-table-bg: transparent;
-  --bs-table-striped-bg: #e9f0ed;
   border: 1px solid var(--line);
   border-radius: 12px;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
-.places-table th { background: var(--night); color: #fff; }
+.places-table .table {
+  --bs-table-bg: transparent;
+  --bs-table-striped-bg: #e9f0ed;
+}
+.places-table thead th { background: var(--night); color: #fff; }
 .places-table th,
 .places-table td { padding: .95rem 1.1rem; vertical-align: middle; }
 
@@ -190,8 +193,7 @@ a:hover { color: var(--sea); }
 .plan-form .form-label { font-weight: 700; }
 .plan-form .form-control:focus,
 .plan-form .form-select:focus { border-color: var(--sea); box-shadow: 0 0 0 .2rem rgb(20 107 116 / 20%); }
-.plan-result { border-left: 4px solid var(--sea); padding: 16px 20px; background: #edf4f2; }
-.plan-result[hidden] { display: none; }
+#plan-result { border-left: 4px solid var(--sea); padding: 16px 20px; background: #edf4f2; }
 .side-photo { width: 100%; height: 260px; object-fit: cover; border-radius: 12px; }
 
 .site-footer { background: var(--night); color: #e4eeeb; }

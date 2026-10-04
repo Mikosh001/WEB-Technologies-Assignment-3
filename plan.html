@@ -40,7 +40,7 @@
           <form id="visit-form">
             <div class="mb-3">
               <label class="form-label" for="visitor-name">Your name</label>
-              <input class="form-control" id="visitor-name" name="visitor-name" type="text" autocomplete="name" required maxlength="60">
+              <input class="form-control" id="visitor-name" name="visitor-name" type="text" autocomplete="name" required maxlength="60" pattern=".*\S.*" title="Please enter your name.">
             </div>
             <div class="mb-3">
               <label class="form-label" for="destination">Place to explore</label>
@@ -67,7 +67,7 @@
             </div>
             <button class="btn button-primary" type="submit">Create my plan</button>
           </form>
-          <section class="plan-result mt-4" id="plan-result" aria-live="polite" hidden>
+          <section class="mt-4" id="plan-result" aria-live="polite" hidden>
             <h2 class="h4 mb-2">Your plan</h2>
             <p class="mb-0" id="plan-summary"></p>
           </section>
@@ -85,7 +85,7 @@
   </main>
 
   <footer class="site-footer py-4">
-    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2 text-center text-md-start">
       <span>Discover Mangystau · Berdibek Meiirbek</span>
       <a href="places.html">Explore places</a>
     </div>
